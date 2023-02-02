@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Сайт</title>
+</head>
+<body>
+<div style="width: 1000px;">
+	 <div style="width: 200px; float: left; border: 1px solid black; display: inline;">
+	  <p>
+		<button id="attackB">Атака синих</button>
+	  </p>	
+	  <p>	
+		<button id="blockB">Блок синих</button>
+	  </p>	
+	  <p>	
+		<button id="inningsB">Подача синих</button>
+	  </p>	
+	  <p>	
+		<button id="errorB">Ошибка синих</button>
+      </p>
+     </div>
+    <div style="width: 600px; float: center; display: inline;">
+	  <div style="height: 500px; width: 60px; display: inline; border: 1px solid blue;">
+		<p id="rt"></p>
+	  </div>
+	  <div style="height: 500px; width: 60px; display: inline; border: 1px solid red;">
+		ПОТОМ
+	  </div>
+    </div>
+     <div style="width: 200px; float: right; border: 1px solid black; display: inline;">
+	  <p>
+		<button id="attackR">Атака красных</button>
+	  </p>	
+	  <p>	
+		<button id="blockR">Блок красных</button>
+	  </p>	
+	  <p>	
+		<button id="inningsR">Подача красных</button>
+	  </p>	
+	  <p>	
+		<button id="errorR">Ошибка красных</button>
+      </p>
+     </div>
+</div>
+<script type="text/javascript">
+	const playersB = [`1`, `2`, `3`, `4`, `5`, `6`, `7`, `8`, `9`, `10`, `11`, `12`]
+	const playersR = [`1`, `2`, `3`, `4`, `5`, `6`, `7`, `8`, `9`, `10`, `11`, `12`]
+	
+	for (let i = 0; i < 6; i++) {
+		fieldR.push(playersR[i])
+	}
+    let fieldB = []
+    for (let i = 0; i < 6; i++) {
+    	fieldB.push(playersB[i])
+    }  
+        let number1 = 0;
+        let number2 = 0;
+	document.getElementById(`attackB`).onclick = function() {
+            for(number1 < 12) {
+            	number1 = number1 + 1
+            alert(number1)
+	        }
+</script>
+</body>
+</html>
